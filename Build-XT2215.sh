@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_NAME="TWRP 12.1 - XT2215" 
+APP_NAME="fox 12.1 - XT2215" 
 
 # Function To Set Startup Screen Placement
 startup_screen_size() {
@@ -86,7 +86,7 @@ mka adbd bootimage
 echo
 echo " Recovery Should Be Built"
 echo ""
-mv $OUT/boot.img ~/Desktop/TWRP_12.1-Stylus_5G_2022-XT2215.img
+mv $OUT/boot.img ~/Desktop/Fox_12.1-Stylus_5G_2022-XT2215.img
 read
 #############################
 #############################
