@@ -21,37 +21,44 @@
 # OrangeFox Config
 FOX_VERSION := "R11.1"
 OF_MAINTAINER := "TigerClips1"
+
+# Statusbar / UI
 OF_STATUS_H := 40
 OF_STATUS_INDENT_LEFT := 48
 OF_STATUS_INDENT_RIGHT := 48
 OF_HIDE_NOTCH := 0
-
-# Screen (matches your DEVICE_RESOLUTION 1080x2400)
 OF_SCREEN_H := 2400
 
-# Detect partition layout automatically (safe default since no explicit A/B suffix in your BOARD_SUPER_PARTITION config)
-OF_USE_TWRP_SAR_DETECT := 1
+# Partition layout — A/B device, no SAR autodetect needed
+OF_AB_DEVICE := 1
+OF_USE_TWRP_SAR_DETECT := 0
 
-# Crypto / FBE — matches your TW_INCLUDE_CRYPTO_FBE + BOARD_USES_QCOM_FBE_DECRYPTION setup
+# Crypto / FBE
 OF_KEEP_DM_VERITY_FORCED_ENCRYPTION := 1
 OF_FORCE_DECRYPTED_ADB_SEPOLICY := 1
+OF_DONT_PATCH_ENCRYPTED_DEVICE := 0
 
-# Magisk patching (OrangeFox's built-in root solution, since TWRP tree has no Magisk handling)
+# Magisk patching
 OF_USE_MAGISKBOOT := 1
 OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := 1
 
-# Dynamic partitions — you're using BOARD_QTI_DYNAMIC_PARTITIONS, so lptools helps a lot in recovery
+# Dynamic partitions
 OF_ENABLE_LPTOOLS := 1
 
-# Misc OrangeFox UX/behavior
+# OTA — update_engine + postinstall configs present, so allow OTA zip flashing
+OF_SUPPORT_OTA_TARGET := 1
+OF_SKIP_OTA_UPDATER_STATUS_CHECK := 1
+
+# Misc UX/behavior
 OF_FLASH_ZIP_WHILE_DISPLAYING_TEXT := 1
-OF_SUPPORT_OTA_TARGET := 0
 OF_USE_LOCKSCREEN := 1
 OF_ALLOW_DISABLE_NAVBAR := 0
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
+OF_USE_SYSTEM_FINGERPRINT_KEEPER := 1
 
-# EDL mode — you already set TW_HAS_EDL_MODE, OF adds its own reboot-to-EDL button hook
+# EDL mode
 OF_ENABLE_EDL_REBOOT := 1
 
-# Quiet fastbootd (you already enable TW_INCLUDE_FASTBOOTD)
+# LED / Vibrator
 OF_USE_GREEN_LED := 0
+OF_ENABLE_VIBRATOR := 1
