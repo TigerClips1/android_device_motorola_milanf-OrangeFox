@@ -19,7 +19,6 @@
 #
 
 # OrangeFox Config
-FOX_MAINTAINER_PATCH_VERSION := "1"
 OF_MAINTAINER := "TigerClips1"
 
 # Statusbar / UI
