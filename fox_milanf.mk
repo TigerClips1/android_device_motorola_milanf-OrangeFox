@@ -19,7 +19,7 @@
 #
 
 # OrangeFox Config
-FOX_VERSION := "R11.1"
+FOX_VERSION := "R12.1"
 OF_MAINTAINER := "TigerClips1"
 
 # Statusbar / UI
