@@ -29,6 +29,8 @@ OF_STATUS_INDENT_RIGHT := 48
 OF_HIDE_NOTCH := 0
 OF_SCREEN_H := 2400
 
+OF_SPLASH_MAX_SIZE := 130
+
 # Partition layout — A/B device, no SAR autodetect needed
 OF_AB_DEVICE := 1
 OF_USE_TWRP_SAR_DETECT := 0
