@@ -37,13 +37,11 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Version & Variant
-	export FOX_VERSION="R12.1"
 	export FOX_VARIANT="A13"
 	export FOX_BUILD_TYPE="Stable"
 	
 	# OrangeFox Addons
 	export FOX_ENABLE_APP_MANAGER=1
-
 	export FOX_MAINTAINER_PATCH_VERSION="5"
 	
 	# Binaries & Tools
